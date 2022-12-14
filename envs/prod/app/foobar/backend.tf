@@ -1,7 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = "takapepe-tfstate"
-    key    = "example/prod/app/foobar_v1.0.0.tfstate"
-    region = "ap-northeast-1"
+    bucket  = "takapepe-tfstate"
+    profile = "terraform"
+    key     = "example/prod/app/foobar_v1.3.4.tfstate"
+    region  = "ap-northeast-1"
   }
 }
